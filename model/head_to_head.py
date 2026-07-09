@@ -24,7 +24,11 @@ TABPFN_CAP = 10000
 FEATURES = ["neutral", "importance", "home_pi_h", "home_pi_a", "away_pi_h", "away_pi_a",
             "exp_gd", "pi_diff", "home_ppg5", "away_ppg5", "home_ppg10", "away_ppg10",
             "form5_diff", "home_gf5", "home_ga5", "away_gf5", "away_ga5",
-            "home_rest", "away_rest", "h2h_gd", "h2h_n"]
+            "home_rest", "away_rest", "h2h_gd", "h2h_n",
+            # Phase 2c-1: star-reliance (the "Haaland effect"), from goalscorers
+            "home_star_share", "away_star_share", "star_share_diff",
+            "home_scorer_hhi", "away_scorer_hhi", "home_scorer_depth", "away_scorer_depth",
+            "home_gpg", "away_gpg"]
 
 
 def rps(y_idx, proba):
